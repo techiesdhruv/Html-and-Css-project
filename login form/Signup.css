@@ -1,50 +1,4 @@
-/* *{
-    margin: 0;
-    padding: 0;
-}
-body{
-    background-color: rgba(22, 6, 170, 0.473);
-    width: 100%;
-    height: 100%;
-}
-.login{
-    
-    text-align: center;
-    background-color: white;
-    border-radius: 10%;
-    margin-top: 50%;
-    margin-left: 50%;
-    text-wrap:wrap;
- word-spacing: 2px;
- letter-spacing: 1px;
-
-}
-#submit{
-    background-color: white;
-    color: black;
-    width: 200px;
-    height: 30px;
-    margin: 2px 0 5px;
-}
-.username{
-    margin:5px;
-    padding: 5px;
-    border: none;
-
-}
-.password{
-    margin: 5px;
-    padding: 5px;
-    border: none;
-   
-}
-.forget{
-    margin-right: 45px;
-  
-} */
-
-
-body{
+body {
     margin: 0;
     padding: 0;
     font-family: Roboto;
@@ -55,7 +9,7 @@ body{
     overflow: hidden;
   }
   
-  .center{
+  .center {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -65,24 +19,25 @@ body{
     border-radius: 10px;
   }
   
-  .center h1{
+  
+  .center h1 {
     text-align: center;
     padding: 0 0 20px 0;
     border-bottom: 1px solid silver;
   }
   
-  .center form{
+  .center form {
     padding: 0 40px;
     box-sizing: border-box;
   }
   
-  form .txt_field{
+  form .txt_field {
     position: relative;
     border-bottom: 2px solid #adadad;
     margin: 30px 0;
   }
   
-  .txt_field input{
+  .txt_field input {
     width: 100%;
     padding: 0 5px;
     height: 40px;
@@ -92,7 +47,7 @@ body{
     outline: none;
   }
   
-  .txt_field label{
+  .txt_field label {
     position: absolute;
     top: 50%;
     left: 5px;
@@ -102,7 +57,7 @@ body{
     pointer-events: none;
   }
   
-  .txt_field span::before{
+  .txt_field span::before {
     content: '';
     position: absolute;
     top: 40px;
@@ -114,27 +69,27 @@ body{
   }
   
   .txt_field input:focus ~ label,
-  .txt_field input:valid ~ label{
+  .txt_field input:valid ~ label {
     top: -5px;
     color: #2691d9;
   }
   
   .txt_field input:focus ~ span::before,
-  .txt_field input:Valid ~ span::before{
+  .txt_field input:Valid ~ span::before {
     width: 100%;
   }
   
-  .pass{
+  .pass {
     margin: -5px 0 20px 5px;
     color: #a6a6a6;
     cursor: pointer;
   }
   
-  .pass:hover{
+  .pass:hover {
     text-decoration: underline;
   }
   
-  input[type="Submit"]{
+  input[type="Submit"] {
     width: 100%;
     height: 50px;
     border: 1px solid;
@@ -142,32 +97,86 @@ body{
     font-size: 18px;
     font-weight: 700;
     cursor: pointer;
-  
   }
   
-  input[type="Submit"]:hover{
+  input[type="Submit"]:hover {
     background: #2691d9;
     color: #e9f4fb;
     transition: .5s;
   }
   
-  .signup_link{
+  .signup_link {
     margin: 30px 0;
     text-align: center;
     font-size: 16px;
     color: #666666;
   }
   
-  .signup_link a{
+  .signup_link a {
     color: #2691d9;
     text-decoration: none;
   }
   
-  .signup_link a:hover{
+  .signup_link a:hover {
     text-decoration: underline;
   }
   
-  .HomeAbout{
+  .HomeAbout {
     width: 100vw;
     height: 25vh;
   }
+  
+  /* Media Queries for 300px to 768px */
+  @media (min-width: 300px) and (max-width: 768px) {
+    .center {
+      width: 80vw; /* Increase the width for smaller screens */
+    
+    }
+    
+    .center h1 {
+      font-size: 20px; /* Adjust font size for heading */
+    }
+    
+    form .txt_field input {
+      height: 35px; /* Reduce height for input fields */
+      font-size: 14px;
+    }
+  
+    form .txt_field label {
+      font-size: 14px; /* Adjust label font size */
+    }
+    
+    input[type="Submit"] {
+      height: 45px; /* Adjust button size */
+      font-size: 16px;
+    }
+  
+    .signup_link {
+      font-size: 14px; /* Adjust font size for the link */
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .center {
+      width: 90vw; /* Wider for very small screens */
+    }
+    
+    .center h1 {
+      font-size: 18px;
+    }
+    
+    form .txt_field input {
+      height: 30px;
+      font-size: 13px;
+    }
+    
+    input[type="Submit"] {
+      height: 40px;
+      font-size: 14px;
+    }
+    
+    .signup_link {
+      font-size: 13px;
+    }
+  }
+  
