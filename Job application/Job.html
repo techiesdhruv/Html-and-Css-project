@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job web</title>
+    <link rel="stylesheet" href="Job.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="apply_box">
+            <h1>
+                Job Application
+                <span class="title_small">(web)</span>
+            </h1>
+            <form action="">
+                <div class="form_container">
+                    <div class="form_control">
+                        <label for="first_name">First name</label>
+                        <!--for me id ka same dalne ke fayede -->
+                        <input id="first_name" type="text" placeholder="Enter your first name ..." required />
+                    </div>
+
+                    <div class="form_control">
+                        <label for="Last_name">Last name</label>
+                        <!--for me id ka same dalne ke fayede -->
+                        <input id="Last_name" type="text" placeholder="Enter your Last name ..." required />
+                    </div>
+
+                    <div class="form_control">
+                        <label for="Email">Email</label>
+                        <!--for me id ka same dalne ke fayede -->
+                        <input id="Email" type="email" placeholder="Enter your Email ..." required />
+                    </div>
+
+                    <div class="form_control">
+                        <label for="Job_role">Job Role</label>
+                        <!--for me id ka same dalne ke fayede -->
+                        <select name="Job_role" id="Job_role">
+                            <option value="">Select Job Role</option>
+
+                            <option value="1">Full stack Developer</option>
+                            <option value="2">Backend Developer</option>
+                            <option value="3">Frontend Developer</option>
+                        </select>
+                    </div>
+
+                    <div class="textarea_control">
+                        <label for="Address">Address</label>
+                        <!--for me id ka same dalne ke fayede -->
+                        <textarea id="address" name="address" rows="2" cols="30" name="address" id="address"></textarea>
+                    </div>
+
+                    <div class="form_control">
+                        <label for="City">City</label>
+                        <!--for me id ka same dalne ke fayede -->
+                        <input id="City" type="text" placeholder="Enter your City ..." />
+                    </div>
+
+                    <div class="form_control">
+                        <label for="Pincode">Pincode</label>
+                        <!--for me id ka same dalne ke fayede -->
+                        <input id="Pincode" type="number" placeholder="Enter your Pincode ..." />
+                    </div>
+
+                    <div class="form_control">
+                        <label for="Start_date">Start date</label>
+                        <!--for me id ka same dalne ke fayede -->
+                        <input id="Start_date" type="date" placeholder="Enter your Startdate ..." />
+                    </div>
+
+                    <div class="form_control">
+                        <label for="">Upload_cv</label>
+                        <!--for me id ka same dalne ke fayede -->
+                        <input id="Upload_cv" type="file" name="Upload_cv" />
+                    </div>
+                </div>
+
+                <div class="button_container">
+                    <button type="submit"> Apply Now </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
