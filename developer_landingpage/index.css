@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.small_name{
+    font-size: medium;
+}
+.landing_view{
+    background-image: url(../developer_landingpage/images/developer.png) ;
+    height: 700px;
+    max-width: 100%;
+    
+}
+
+.heading{
+    margin: 0px auto;
+    text-align: center;
+
+    color: white;
+    
+}
+.Work{
+    background-color: black;
+    height: 100px;
+    max-width: 100%;
+}
+.text
+{
+    font-size: 40px;
+  
+  color: white;  
+  
+  text-align: center;
+
+}
+.big_text{
+    font: 600;
+    font-size: 80px;
+}
+
+.work{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+}
+.card
+{
+    max-width: 320px;
+    height: 350px;
+    border-radius: 10px;
+    box-shadow: 3px 5px 5px rgba(1,1,1,0.2);
+    margin: 10px;
+    transition: 0.2s ease-in-out;
+
+}
+.card:hover{
+    transform: scale(1.04);
+    box-shadow: 3px 5px 5px rgba(1,1,1,0.3);
+    transition: 0.2s ease-in-out;
+
+}
+.grid_item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card_content{
+    padding: 20px;
+}
+
+.bottom_Section{
+    display: flex;
+    margin-top: 10px;
+
+
+}
+.contact{
+    background-color: #ee1d1d;
+
+    }
+.about{
+    background-color: rgb(82, 82, 2);
+}
+.contact,.about{
+    min-height: 200px;
+    padding: 32px;
+    color: white;
+}
+.contact h3,.about h3{
+    padding: 20px;
+   align-items: center;
+}
+.footer{
+    background-color: black;
+    height: 80px;
+    color: white;
+    margin: 5px;
+
+}
+.footer p{
+    justify-content: center;
+   text-align: center;
+   text-transform: capitalize;
+max-width: 900px;;
+}
